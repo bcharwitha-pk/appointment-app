@@ -1,9 +1,9 @@
-var express = require('express');
-var app = express();
-var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
-var cors = require('cors');
-var port = 5000;
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const port = 5000;
 
 const base_url = "http://localhost:5000/";
 
@@ -13,7 +13,6 @@ app.use(cors());
 
 app.set('base', base_url);
 app.use(express.static('public'));
-app.use(express.static(__dirname));
 
 require('./api/index.js')(app);
 
