@@ -1,1 +1,5 @@
-# appointment-app
+# Doctor Appointment Booking App
+
+> npm install
+> npm start
+
